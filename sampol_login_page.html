@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Visvis Login Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+
+    
+    body {
+      background-image: linear-gradient(to bottom, #FFFFFF, #CAE4DB);
+    }
+
+   
+    body:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://i.imgur.com/9XtgGeL.png');
+      opacity: 0.2;
+      z-index: -1;
+    }
+
+    .navbar-brand img {
+      height: 50px;
+      border: 2px solid #fff;
+      padding: 2px;
+      margin-right: 10px;
+    }
+    .navbar-brand {
+    display: flex; 
+    align-items: center;
+    } 
+    .navbar {
+      background-color: #6fbf73; 
+    }
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+  
+    }
+    .navbar-brand:hover, .nav-link:hover {
+      color: #fff !important;
+    }
+    .jumbotron {
+      background-color: #6fbf73;
+      color: #fff;
+      padding-top: 100px;
+      padding-bottom: 50px;
+      margin-bottom: 0;
+    }
+    .btn-primary {
+      background-color: #6fbf73;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 18px;
+    }
+    .btn-primary:hover {
+      background-color: #3a9e4f;
+      color: #fff;
+    }
+    .form-group input {
+      border: none;
+      border-bottom: 2px solid #6fbf73;
+      border-radius: 0;
+      padding-left: 0;
+      font-size: 20px;
+    }
+    .form-group label {
+      font-size: 20px;
+      color: #6fbf73;
+    }
+    .form-group input:focus {
+      box-shadow: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#"><img src="visvis_logo.png" alt="Visvis Travel Inc." ><span>Visvis Travel Inc.</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Guest</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tours</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reports</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-4">
+        <div class="jumbotron">
+          <h1 class="display-4">Welcome to Visvis Travel Inc.</h1>
+          <p class="lead">Please sign in to access your account.</p>
+          <form>
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" class="form-control" id="username" placeholder="Enter your username">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <div class="input-group">
+                <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                <div class="input-group-append">
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+          </form>
+          <hr>
+          <p>Don't have an account? <a href="#">Sign Up</a></p>
+        </div>
+      </div>
+    </div>
+  </div>   
+</body>
